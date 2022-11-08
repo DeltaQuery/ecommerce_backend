@@ -4,7 +4,6 @@ const userRoutes = express.Router()
 const userController = require('../controllers/UserController')
 const { checkAdminRole } = require("../middlewares/auth.handler")
 
-
 userRoutes.get('/', passport.authenticate("jwt", {session: false}), checkAdminRole, userController.findAll)
 userRoutes.get('/:id', passport.authenticate("jwt", {session: false}), checkAdminRole, userController.findById)
 userRoutes.post('/', passport.authenticate("jwt", {session: false}), checkAdminRole, userController.addUser)

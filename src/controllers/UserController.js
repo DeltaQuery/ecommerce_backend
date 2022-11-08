@@ -21,6 +21,7 @@ exports.findById = async (req, res, next) => {
         })
 }
 
+//This is just for AuthController
 exports.findByUser = async (req, res, next) => {
     try {
         const { id } = req.params

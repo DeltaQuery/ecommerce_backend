@@ -1,14 +1,14 @@
 {
-  "name": "school-billing-backend",
+  "name": "ecommerce-backend",
   "version": "1.0.0",
-  "description": "backend for school billing system",
+  "description": "backend for ecommerce",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "nodemon": "nodemon src/index.js"
   },
-  "author": "DeltaQuery",
+  "author": "DeltaQuery, WillCH, Cosmo",
   "license": "ISC",
   "dependencies": {
     "@hapi/boom": "^10.0.0",

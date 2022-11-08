@@ -1,23 +1,7 @@
 const { Schema, model } = require("mongoose")
 
 const productSchema = new Schema({
-    CONCEPTO_PRODUCTO: {
-      type: String,
-      required: true
-    },
-    PRECIO_PREESCOLAR: {
-      type: Number,
-      required: false
-    },
-    PRECIO_BASICA: {
-      type: Number,
-      required: false
-    },
-    ESCENARIO_PRODUCTO: {
-      type: Number,
-      required: true
-    },
-    TIPO_PRODUCTO: {
+   /* CONCEPTO_PRODUCTO: {
       type: String,
       required: true
     },
@@ -29,26 +13,6 @@ const productSchema = new Schema({
       type: Boolean,
       required: true
     },
-    ALICUOTA_IVA: {
-      type: Number,
-      required: false
-    },
-    PRONTO_PAGO_PREESCOLAR: {
-      type: Number,
-      required: true
-    },
-    PAGO_VENCIDO_PREESCOLAR: {
-      type: Number,
-      required: true
-    },
-    PRONTO_PAGO_BASICA: {
-      type: Number,
-      required: true
-    },
-    PAGO_VENCIDO_BASICA: {
-      type: Number,
-      required: true
-    },
     FECHA_REGISTRO: {
       type: String,
       required: true
@@ -56,7 +20,7 @@ const productSchema = new Schema({
     REGISTRADO_POR: {
       type: String,
       required: true
-    }
+    }*/
   }); 
 
 productSchema.set("toJSON", {
