@@ -8,11 +8,12 @@
     "start": "node src/index.js",
     "nodemon": "nodemon src/index.js"
   },
-  "author": "DeltaQuery, WillCH, Cosmo",
+  "author": "DeltaQuery",
   "license": "ISC",
   "dependencies": {
     "@hapi/boom": "^10.0.0",
     "axios": "^0.27.2",
+    "bcrypt": "^5.1.0",
     "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",

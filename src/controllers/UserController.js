@@ -19,7 +19,7 @@ exports.findById = async (req, res, next) => {
         .catch(err => {
             next(err)
         })
-}
+} 
 
 //This is just for AuthController
 exports.findByUser = async (req, res, next) => {

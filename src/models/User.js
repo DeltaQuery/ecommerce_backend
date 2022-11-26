@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose")
 
-const userSchema = new Schema({
+const schema = new Schema({
     user: {
         type: String,
         unique: true,
@@ -16,13 +16,13 @@ const userSchema = new Schema({
     }
 })
 
-userSchema.set("toJSON", {
+schema.set("toJSON", {
     transform: (document, returnedObject) => {
         delete returnedObject.__v 
         delete returnedObject.password
     }
 })
 
-const User = model("User", userSchema)
+const User = model("User", schema)
 
 module.exports = User
