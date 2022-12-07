@@ -2,7 +2,6 @@ const { Strategy } = require("passport-local")
 const authController = require("../../../controllers/AuthController")
 const bcrypt = require("bcrypt")
 
-
 const LocalStrategy = new Strategy({
   usernameField: 'user',
   passwordField: 'password'

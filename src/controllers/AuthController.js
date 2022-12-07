@@ -11,9 +11,11 @@ exports.login = async (req, res, next) => {
             sub: user._id,
             role: user.role
         }
-        const token = jwt.sign(payload, secret)
+        const token = jwt.sign(payload, secret,{
+            expiresIn: '24h' // expires in 24 hours
+             })
         res.json({
-            user,
+            user, 
             token
         })
     } catch (err) {

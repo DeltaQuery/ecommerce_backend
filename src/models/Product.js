@@ -19,10 +19,10 @@ const schema = new Schema({
     images: [
         {
             largeImg: {
-                type: [String]
+                type: String
             },
             smallImg: {
-                type: [String]
+                type: String
             }
         }
     ],
