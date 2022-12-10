@@ -38,6 +38,9 @@ const schema = new Schema({
             }
         ]
     },
+    combo_data: {
+        type: Object
+    },
     stock: {
         type: Number
     },
