@@ -58,8 +58,8 @@ const depopulateModels = async (variantId, productId = undefined, deletedVariant
             if (index >= 0) {
                 variant.models.variants = []
             }
-        } else if(productId !== undefined){
-           variant.models.variants = variant.models.variants.filter(product => product._id !== productId) 
+        } else if (productId !== undefined) {
+            variant.models.variants = variant.models.variants.filter(product => product._id !== productId)
         }
         await productModel.findByIdAndUpdate(variantId, variant, { new: true })
     }
@@ -150,7 +150,9 @@ exports.deleteProduct = async (req, res, next) => {
 }
 
 function getUniqueArr(arr) {
-    const newArr = [...new Map(arr.map(item => [item._id, item])).values()]
-
-    return newArr
+    if(arr && arr.lenght > 0){
+        const newArr = [...new Map(arr.map(item => [item._id, item])).values()]
+        return newArr
+    }
+     return []   
 }
