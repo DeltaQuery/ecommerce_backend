@@ -38,6 +38,9 @@ const schema = new Schema({
             }
         ]
     },
+    combo_item: {
+        type: Boolean
+    },
     combo_data: {
         type: Schema.Types.Mixed
     },
