@@ -150,9 +150,11 @@ exports.deleteProduct = async (req, res, next) => {
 }
 
 function getUniqueArr(arr) {
-    if(arr && arr.lenght > 0){
-        const newArr = [...new Map(arr.map(item => [item._id, item])).values()]
-        return newArr
+    if(arr !== undefined){
+        if(arr.length > 0){
+            const newArr = [...new Map(arr.map(item => [item._id, item])).values()]
+            return newArr
+        }
     }
      return []   
 }

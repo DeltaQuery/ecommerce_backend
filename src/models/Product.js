@@ -39,7 +39,7 @@ const schema = new Schema({
         ]
     },
     combo_data: {
-        type: { type: Object }
+        type: Schema.Types.Mixed
     },
     stock: {
         type: Number
