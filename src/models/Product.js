@@ -11,7 +11,8 @@ const schema = new Schema({
         type: Number
     },
     discountedPrice: {
-        type: Number
+        type: Number,
+        default: null
     },
     features: {
         type: [String]
